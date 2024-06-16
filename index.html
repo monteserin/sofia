@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: pink;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
+
+      main {
+        background-color: lightblue;
+        padding: 20px;
+        width: 75%;
+      }
+      aside {
+        width: 20%;
+      }
+      footer {
+        background-color: lightgreen;
+        padding: 20px;
+      }
+
+      main,
+      aside {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header onClick="alert('bye!')">
+        <p>Logo</p>
+        <nav>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <main>
+          <h1 onmouseover="alert('hola')">bura bura</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            animi harum? Id deserunt itaque nobis inventore, sequi debitis,
+            repellat numquam quis, quidem consequuntur laudantium temporibus
+            consequatur molestiae beatae officia vero.
+          </p>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+            ipsam tenetur laudantium, voluptatum velit earum quisquam dicta
+            quidem aspernatur blanditiis in praesentium inventore a magni
+            labore? Mollitia doloremque harum voluptates!
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+            ipsam tenetur laudantium, voluptatum velit earum quisquam dicta
+            quidem aspernatur blanditiis in praesentium inventore a magni
+            labore? Mollitia doloremque harum voluptates!
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+            ipsam tenetur laudantium, voluptatum velit earum quisquam dicta
+            quidem aspernatur blanditiis in praesentium inventore a magni
+            labore? Mollitia doloremque harum voluptates!
+          </p>
+        </main>
+        <aside>
+          <h3>Aside</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quae, quos, quod quia quibusdam dolorum voluptatem
+            aspernatur quas quidem nemo. Quisquam voluptates, quae, quos, quod
+            quia quibusdam dolorum voluptatem aspernatur quas quidem nemo.
+          </p>
+        </aside>
+      </section>
+      <footer>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima rem
+          itaque nisi autem alias. Veniam reprehenderit, earum consequuntur
+          ratione delectus iste nobis reiciendis libero hic ipsum est iure
+          asperiores nostrum.
+        </p>
+        <form action="fichero.php" method="post">
+          <input type="text" name="nombre" />
+          <button>Enviar</button>
+        </form>
+      </footer>
+    </div>
+    <script>
+      let number = prompt("Introduce un número");
+      while (number % 2 === 0) {
+        number = prompt("Introduce un número");
+      }
+      for (let i = 0; i < number; i++) {
+        let word = "";
+        for (let j = 0; j < number; j++) {
+          word += "*";
+          process.stdout.write("*");
+        }
+        console.log(word);
+      }
+    </script>
+  </body>
+</html>
